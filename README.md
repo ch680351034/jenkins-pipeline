@@ -13,7 +13,7 @@
   * Enter an Item Name and select Pipeline
   * Select OK
 
-  ![New Item](../images//jenkins-new-item.jpg)
+  ![New Item](../images/jenkins-new-item.jpg)
 
 * From the Jenkin's Dashboard, select New Item. 
   * Enter an Item Name and select Pipeline
@@ -26,15 +26,14 @@
   * Script Path: Jenkinsfile
 * Click SAVE.
 
-  ![Pipeline SCM](../images//jenkins-pipeline-scm.jpg)
+  ![Pipeline SCM](../images/jenkins-pipeline-scm.jpg)
 
 #### Jenkins Pipeline Stage View
 
-  ![Stage View](../images//jenkins-stage-view.jpg)
+  ![Stage View](../images/jenkins-stage-view.jpg)
 
 #### Jenkins Pipeline Approval Stage
 
-  ![Approval](../images//jenkins-approval.jpg)
-  ![Stage View](../images//jenkins-stage-view.jpg)
+  ![Approval](../images/jenkins-approval.jpg)
 
  

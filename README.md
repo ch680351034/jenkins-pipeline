@@ -43,3 +43,29 @@
   ![Approval](images/jenkins-approval.png)
 
  
+
+### docker-compose.yml
+Do not forget to update MYSQL's root password. 
+
+```
+...
+  service-stock-mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: <YOUR_DB_PASSWORD>
+...
+```
+
+Adjust the number of replica accordingly.
+
+```
+...
+  php:
+    image: custom-php:latest
+    deploy:
+      replicas: 2
+    volumes:
+      - ./:/var/www/
+...
+```
+

@@ -15,9 +15,6 @@
 
   ![New Item](images/jenkins-new-item.png)
 
-* From the Jenkin's Dashboard, select New Item. 
-  * Enter an Item Name and select Pipeline
-  * Click OK
 * Click on the Pipeline Tab 
   * Definition: Pipeline script from SCM
   * SCM: Git

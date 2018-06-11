@@ -1,0 +1,22 @@
+version: '3'
+services: 
+
+  service-stock-mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  php:
+    image: megazebra-php:latest
+    deploy:
+      replicas: 2
+    volumes:
+      - ./:/var/www/
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./docker/nginx/:/etc/nginx/conf.d/
+      - ./public:/var/www/public

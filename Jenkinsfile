@@ -19,7 +19,7 @@ node {
       input message: 'Approve deployment?', ok: 'Deploy!'
     }
     sh 'if docker node ls > /dev/null 2>&1; then docker swarm leave --force; fi'
-    sh 'if ! docker images | grep megazebra-php >  /dev/null 2>&1; then docker build -t megazebra-php -f ./docker/php/Dockerfile .; fi'
+    sh 'if ! docker images | grep custom-php >  /dev/null 2>&1; then docker build -t custom-php -f ./docker/php/Dockerfile .; fi'
     sh 'docker swarm init'
     sh 'docker stack deploy -c docker-compose.yml source-stock'
   }

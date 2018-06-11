@@ -26,6 +26,15 @@
   ![Pipeline SCM](images/jenkins-pipeline-scm.png)
 
 #### Jenkins Pipeline Stage View
+  * Cleanup Workspace
+    * Cleanup workspace before building the project. 
+    * Delete exited containers.
+  * Checkout
+    * Checkout the branch to build
+  * Build
+  * Unit Test
+  * Deploy
+    * Wait for the approver's signal before executing this stage. Otherwise, abort pipeline. 
 
   ![Stage View](images/jenkins-stage-view.png)
 
